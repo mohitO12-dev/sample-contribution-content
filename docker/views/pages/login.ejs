@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+
+    <title>Login page</title>
+  </head>
+  <body>
+    <form class="w-100" action="./login" method="post">
+      <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input
+          class="form-control"
+          id="inputUsername"
+          name="username"
+          placeholder="e.g. johndoe"
+          type="text"
+          value="<%= failedAuth ? username : '' %>"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input
+          class="form-control"
+          id="inputPassword"
+          name="password"
+          placeholder="e.g. qwerty"
+          type="password"
+          value="<%= failedAuth ? password : '' %>"
+        />
+      </div>
+      <%if (failedAuth) { %>
+      <div id="emailHelp" class="form-text text-danger shaked">
+        We couldn't match your credentials to a valid account.
+      </div>
+      <% } %>
+      <button type="submit" class="w-100 btn btn-primary mt-3">Log in</button>
+    </form>
+
+    <footer><%- include('../partials/footer'); %></footer>
+  </body>
+</html>
