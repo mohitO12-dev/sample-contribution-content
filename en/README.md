@@ -56,6 +56,6 @@
 
   Will you be able to find a SQL payload that allows you to log in without knowing any valid credentials? :muscle:
 
-  @@¡¡ docker_image_content_will_be_added_here !!@@
+  @@docker_image_here@@
 
 [1]: https://sqlmap.org/
