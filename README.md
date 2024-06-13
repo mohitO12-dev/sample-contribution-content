@@ -1,6 +1,6 @@
 # Sample contribution content based on the topic "Finding SQL Injections"
 
-## What is the structure of this repository?
+##Welcome, What is the structure of this repository?
 
 * `docker`: contains a docker image that builds a hands-on training exercise, in this case written in Node.js, about learning how to find SQL injections via a login form.
 * `en`: contains a single file called `README.md` which is actually the technical content that explains how to manually find SQL injections in web applications.
